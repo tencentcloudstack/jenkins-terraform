@@ -44,5 +44,5 @@ jobs:
 
       - name: Terragrunt Init
         working-directory: ./deployments/department1/${{ github.event.label.name }}
-        run: terragrunt init --terragrunt-non-interactive
+        run: terragrunt run-all init --terragrunt-non-interactive
       
