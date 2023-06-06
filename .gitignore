@@ -1,0 +1,4 @@
+.DS_Store
+
+**/.terragrunt-cache/
+.terraform.lock.hcl
