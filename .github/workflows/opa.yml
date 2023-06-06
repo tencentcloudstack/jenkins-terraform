@@ -30,21 +30,17 @@ jobs:
         with:
           terraform_version: 1.4.6
           terraform_wrapper: false
-      - name: Setup Terraform version
-        run: terraform --version
-      - name: Setup Terraform wrapper path
-        run: which terraform
-      
       - name: Setup Terragrunt v0.45.4
         run: |
           sudo wget -q -O /bin/terragrunt "https://github.com/gruntwork-io/terragrunt/releases/download/v0.45.4/terragrunt_linux_amd64"
           sudo chmod +x /bin/terragrunt
           terragrunt -v
-          pwd
-
+      - name: Setup OPA
+        uses: open-policy-agent/setup-opa@v2
+    
       - name: OPA
         working-directory: ./deployments/department1/${{ github.event.label.name }}
         run: |
-          terragrunt run-all plan --out /tmp/tfplan.binary
-          terragrunt run-all show -json /tmp/tfplan.binary > /tmp/tfplan.json
+          terragrunt run-all plan --terragrunt-no-auto-init --out /tmp/tfplan.binary
+          terragrunt run-all show --terragrunt-no-auto-init -json /tmp/tfplan.binary > /tmp/tfplan.json
           opa eval --format pretty --data ../../../opa-policies/cvm  --input /tmp/tfplan.json  "data.terraform_tencentcloud" 
