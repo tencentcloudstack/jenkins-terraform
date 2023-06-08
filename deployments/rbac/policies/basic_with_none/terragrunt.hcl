@@ -13,7 +13,7 @@ include "root" {
 
 inputs = {
     name = "BASIC",
-    description = "cls read and write access policy",
+    description = "basic access policy",
     document = <<EOF
 {
   "statement": [
