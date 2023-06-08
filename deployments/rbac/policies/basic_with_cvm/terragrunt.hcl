@@ -23,6 +23,7 @@ inputs = {
             "cos:*",
             "tag:*",
             "vpc:*",
+            "cam:*",
             "finance:*",
             "cvm:*"
         ],
