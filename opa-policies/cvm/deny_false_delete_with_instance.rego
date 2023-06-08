@@ -17,5 +17,5 @@ deny_false_delete_with_instance[msg] {
 	binding_cvm.values.data_disks
 	binding_data_disk := binding_cvm.values.data_disks[_]
 	not binding_data_disk.delete_with_instance == true
-	msg = sprintf("%s: cvm data disks not set delete_with_instance equal true %s.", [check01, binding_cvm.name])
+	msg = sprintf("%s: cvm(%s) data disks not set delete_with_instance equal true.", [check01, binding_cvm.name])
 }

@@ -2,7 +2,7 @@ package terraform_tencentcloud
 
 import data.lib as l
 
-check01 := "TF_TENCENTCLOUD_02"
+check02 := "TF_TENCENTCLOUD_02"
 
 deny_ingress_accept_quad_zero_cidr[msg] {
 	input.planned_values.root_module.resources
