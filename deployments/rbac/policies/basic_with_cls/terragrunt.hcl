@@ -12,8 +12,8 @@ include "root" {
 }
 
 inputs = {
-    name = "COS_RW_ACCESS",
-    description = "cos read and write access policy",
+    name = "CLS_RW_ACCESS",
+    description = "cls read and write access policy",
     document = <<EOF
 {
   "statement": [
@@ -23,7 +23,6 @@ inputs = {
             "cos:*",
             "tag:*",
             "vpc:*",
-            "cam:*",
             "finance:*",
             "cls:*"
         ],

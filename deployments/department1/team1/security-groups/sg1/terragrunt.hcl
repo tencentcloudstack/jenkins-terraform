@@ -12,5 +12,5 @@ include "root" {
 }
 
 inputs = {
-  name   = "terraform-iac"
+  name   = "team1-sg"
 }

@@ -1,5 +1,5 @@
 terraform {
-  source = "${get_path_to_repo_root()}/modules/cos"
+  source = "${get_path_to_repo_root()}/modules/security_group"
 }
 
 locals {
@@ -12,7 +12,5 @@ include "root" {
 }
 
 inputs = {
-  bucket_name       = "tf-bucket-team3"
-  bucket_acl        = "private"
-  multi_az          = false
+  name   = "team3-sg"
 }

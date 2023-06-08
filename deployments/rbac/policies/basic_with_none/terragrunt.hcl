@@ -12,8 +12,8 @@ include "root" {
 }
 
 inputs = {
-    name = "CVM_RW_ACCESS",
-    description = "cvm read and write access policy",
+    name = "BASIC",
+    description = "cls read and write access policy",
     document = <<EOF
 {
   "statement": [
@@ -23,8 +23,7 @@ inputs = {
             "cos:*",
             "tag:*",
             "vpc:*",
-            "finance:*",
-            "cvm:*"
+            "finance:*"
         ],
         "resource": [
             "*"

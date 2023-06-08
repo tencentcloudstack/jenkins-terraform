@@ -12,11 +12,11 @@ include "root" {
 }
 
 inputs = {
-  logset_name          = "team1-logset1"
+  logset_name          = "team2-logset"
   logset_tags          = {
     created = "terraform"
   }
-  topic_name           = "team1-topic"
+  topic_name           = "team2-topic"
   auto_split           = false
   max_split_partitions = 40
   storage_type         = "cold"
