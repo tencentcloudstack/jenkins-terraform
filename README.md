@@ -3,7 +3,6 @@
 
 示例仅供参考。
 
-
 ## 场景描述
 1、一个集团（Organization）下，有两个子公司Department1和Department2
 
