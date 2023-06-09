@@ -1,4 +1,4 @@
-# Terrafor与Jenkins实践
+# Terraform与Jenkins实践
 示例使用Terraform和Terragrunt进行多账号管理腾讯云资源，结合Jenkins和JFrog实现CI/CD。
 
 示例仅供参考。
