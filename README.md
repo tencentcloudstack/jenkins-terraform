@@ -120,7 +120,7 @@
 ## 结果展示
 
 ### Jenkins运行结果 
-![Jenkins运行结果](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/jenkins-opa.jpg)
+![Jenkins运行结果](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/jenkins.jpg)
 
 ### Plan信息
 ![Plan信息](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/plan.jpg)
@@ -128,5 +128,11 @@
 ### OPA检查结果
 ![OPA检查结果](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/opa-check.jpg)
 
+### 企业微信通知
+![企业微信通知](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/wechat.jpg)
+
 ### JFrog Builds 
-![JFrog Builds](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/jfrog.jpg)
+![JFrog Builds](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/jfrog-builds.jpg)
+
+### JFrog Artifact 
+![JFrog Artifact](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/jfrog-artifact.jpg)
