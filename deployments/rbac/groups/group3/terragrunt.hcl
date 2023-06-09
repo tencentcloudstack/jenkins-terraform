@@ -11,8 +11,8 @@ include "root" {
   path = find_in_parent_folders()
 }
 
-dependency "basic_with_none" {
-  config_path = "../../policies/basic_with_none"
+dependency "basic_with_cls" {
+  config_path = "../../policies/basic_with_cls"
   mock_outputs = {
     policy_id = "xxxxxx"
   }
@@ -28,6 +28,6 @@ dependency "user3" {
 inputs = {
   name       = "group3"
   remark     = "group3 with user3"
-  policy_id  = dependency.basic_with_none.outputs.policy_id
+  policy_id  = dependency.basic_with_cls.outputs.policy_id
   user_names = [dependency.user3.outputs.user_id]
 }
