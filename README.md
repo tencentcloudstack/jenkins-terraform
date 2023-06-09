@@ -118,7 +118,7 @@
 *   ② 发布Tag规范 ： team1#online_update
 
 ## 结果展示
-![Jenkins运行结果]("https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/jenkins-opa.jpg")
-![Plan结果]("https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/plan.jpg")
-![OPA内容]("https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/opa-check.jpg")
-![JFrog Builds]("https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/opa-check.jpg")
+![Jenkins运行结果](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/jenkins-opa.jpg)
+![Plan结果](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/plan.jpg)
+![OPA内容](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/opa-check.jpg)
+![JFrog Builds](https://github.com/tencentcloudstack/jenkins-terraform/blob/main/imgs/opa-check.jpg)
