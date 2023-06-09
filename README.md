@@ -7,6 +7,7 @@
 3、Team1有创建CVM的权限，Team2有创建CLS的权限，Team3只有创建安全组的权限
 
 ## 目录结构
+```
 ├─opa-policies           # OPA检查规则
 |      ├─security-group
 |      |       └deny_ingress_accept_quad_zero_cidr.rego
@@ -103,7 +104,7 @@
 |      |      |   ├─cvms
 |      |      |   |  ├─cvm1
 |      |      |   |  |  └terragrunt.hcl
-
+```
 ## 变更规范
 1、Rbac变更
 ① 分支规范 ： rbac/add-cvm
