@@ -21,5 +21,5 @@ dependency "sg_cvm1" {
 inputs = {
   cvm_name                = "team1-cvm"
   security_groups         = [dependency.sg_cvm1.outputs.security_group_id]
-  is_delete_with_instance = true
+  is_delete_with_instance = false
 }
